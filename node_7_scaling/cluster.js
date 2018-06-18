@@ -42,6 +42,6 @@ if (cluster.isMaster) {
         if (count === 3) {
             cluster.worker.destroy();
         }
-    }).listen(process.env.PORT, process.env.IP);
+    }).listen(8080, '127.0.0.1');
 }
 
